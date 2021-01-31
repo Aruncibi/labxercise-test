@@ -50,6 +50,11 @@ public String Insurancescheme(double salary,String designation){
 		this.insurancescheme="Product liability insurance";
 	return insurancescheme;
 }
+//@Override
+//public String Insurancescheme() {
+//	// TODO Auto-generated method stub
+//	return null;
+//}
 @Override
 public String Insurancescheme() {
 	// TODO Auto-generated method stub

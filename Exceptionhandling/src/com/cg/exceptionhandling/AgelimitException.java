@@ -8,6 +8,6 @@ public class AgelimitException extends Exception {
 
 public AgelimitException()
 {
-	
+	super("Invalid age");
 }
 }

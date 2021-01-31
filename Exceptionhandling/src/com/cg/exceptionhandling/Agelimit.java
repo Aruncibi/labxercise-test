@@ -10,19 +10,27 @@ public class Agelimit{
 	public static void main(String[] args) {
 	    //Scanner scanner = new Scanner(System.in);
 	    System.out.println("Enter your name");
-	    String name=scanner.next();
+	    String name=scanner.nextLine();
 	    System.out.println("Enter your age");
     	int age=scanner.nextInt();
+    	System.out.println("Enter salary");
+    	double salary=scanner.nextDouble();
+        String []words=name.split("[ ]+");
+    	int len=words.length;
     try
     {
     	if(age<=15)
     		throw new AgelimitException();
+    	if(salary<3000)
+    		throw new SalaryException();
+    	if(len==0)
+    		throw new NamenotFoundException();
     	else
-    		   System.out.println(name+"'s age is "+age);
+    		   System.out.println(name+" "+salary+" "+age);
     }
-    catch(AgelimitException e)
+    catch(Exception e)
     {
-    	System.out.println("You have entered the invalid age");
+    	System.out.println(e);
     }
 }
 }
