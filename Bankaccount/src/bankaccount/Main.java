@@ -53,6 +53,7 @@ static Scanner scanner = new Scanner(System.in);
         	obj2.deposit();
     System.out.println(obj.getName()+" balance "+obj1.getMinbalance1());
     System.out.println(ob.getName()+" balance "+obj2.getMinbalance1());
+    System.out.println("thank you");
 	}
     
 }
